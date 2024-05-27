@@ -52,7 +52,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.manninglabs.steadycalendar</string>
+				<string>co.supabase.steadycalendar</string>
 			</array>
 		</dict>
 	</array>

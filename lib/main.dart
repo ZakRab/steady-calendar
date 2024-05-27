@@ -10,7 +10,6 @@ void main() async {
   await load(fileName: '.env');
   await Supabase.initialize(
       url: "https://${env['SUPABASE_PROJECT_ID']!}.supabase.co",
-      anonKey: env['SUPABASE_ANON_KEY']!,
-      debug: false);
+      anonKey: env['SUPABASE_ANON_KEY']!);
   runApp(const App());
 }
