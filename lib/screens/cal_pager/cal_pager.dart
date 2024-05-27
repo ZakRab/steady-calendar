@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:steadycalendar/config/constants.dart';
-import 'package:steadycalendar/screens/splash/spash.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class CalPager extends StatelessWidget {
