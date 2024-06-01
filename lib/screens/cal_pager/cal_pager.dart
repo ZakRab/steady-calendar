@@ -36,7 +36,8 @@ class CalPager extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                    Text(Supabase.instance.client.auth.currentUser!.id),
+                    Text(Supabase.instance.client.auth.currentUser!.email
+                        .toString()),
                     TextButton(onPressed: _logOut, child: const Text("Log Out"))
                   ]))
             : Container())

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:steadycalendar/screens/cal_pager/cal_pager.dart';
+import 'package:steadycalendar/screens/intro/intro.dart';
 import 'package:steadycalendar/screens/login_options/login_options.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -26,7 +27,7 @@ class _SplashState extends State<Splash> {
       if (session != null) {
         Navigator.pushNamed(context, CalPager.routeName);
       } else {
-        Navigator.pushNamed(context, LoginOptions.routeName);
+        Navigator.pushNamed(context, Intro.routeName);
       }
     });
   }
