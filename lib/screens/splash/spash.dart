@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:steadycalendar/providers/session_provider.dart';
 import 'package:steadycalendar/screens/cal_pager/cal_pager.dart';
 import 'package:steadycalendar/screens/intro/intro.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -25,6 +27,7 @@ class _SplashState extends State<Splash> {
 
       if (session != null) {
         Navigator.pushNamed(context, CalPager.routeName);
+        Provider.of<SessionProvider>(context, listen: false).refreshCalendars();
       } else {
         Navigator.pushNamed(context, Intro.routeName);
       }
