@@ -5,6 +5,8 @@ import 'package:steadycalendar/config/constants.dart';
 import 'package:steadycalendar/models/calendar_dates_converter.dart';
 import 'package:steadycalendar/models/date_time_converter.dart';
 
+part 'calendar.g.dart';
+
 @JsonSerializable()
 @CalendarDatesConverter()
 @DateTimeConverter()
